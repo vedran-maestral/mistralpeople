@@ -47,7 +47,7 @@ var people = [
     "dev-Damir-We need to Cox that feature", "Damir", "Ramic", 2, 7,
     "qa-Daria-", "Daria", "Rojic", 3, 7,
     "dev-Milhad-I dream going to Nepal", "Milhad", "Salihi", 4, 7,
-    "cmo-DamirSa-Ladies and gentleman, I am DSF", "Damir", "Saracevic", 5, 7,
+    "cmo-DamirSa-Ladies and gentleman, I am DFS", "Damir", "Saracevic", 5, 7,
     "Lady-Hiba-Dear, on your way out, could you take this bag?", "Hiba", "Prezime", 6, 7,
     "dev-DinoSe-", "Dino", "Selimbasic", 1, 8,
     "dev-Ervin-I wonder, was Frodo a programmer?", "Ervin", "Sikira", 2, 8,
