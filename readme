@@ -1,0 +1,10 @@
+
+Data Structure Explanation
+ "dev-Vedran-Lives in Sarajevo.", "Vedran", "Maricevic", 1, 1,-- This is sample
+  - dev-- is position in the company. Use max of four letters. If more is needed, make font small via css
+  - Vedran-- is name of the jpg located in the img folder
+  - Lives in Sarajevo-- Is custom message for the company member. If any
+  - Vedran-- Name
+  - Maricevic-- Lastname
+  - -- Vertical position in the grid
+  - 1-- Horizontal position in the grid

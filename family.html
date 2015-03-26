@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>MISTRAL Folks</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mistralway.css">
+</head>
+<body>
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<header>
+    <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!--<a href="#"><img class="overideImg" src="img/mistrallogo.jpg"></a>-->
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="people" value="Table" class="btn">Table</a></li>
+                    <li><a id="sphere" value="Sphere" class="btn">Sphere</a></li>
+                    <li><a id="helix" value="Helix" class="btn">Helix</a></li>
+                    <li><a id="grid" value="Grid" class="btn">Grid</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="free-text"> Use mouse and mouse buttons to navigate the scene</div>
+<script src="js/three.min.js"></script>
+<script src="js/tween.min.js"></script>
+<script src="js/TrackballControls.js"></script>
+<script src="js/CSS3DRenderer.js"></script>
+
+<script src="js/handlebars-v3.0.0.js"></script>
+
+<script id="person-template" type="text/x-handlebars-template">
+    <div>
+        <div class="displayedDetails">
+            {{fname}}
+            {{lname}}
+        </div>
+        <img class="img-responsive" src="{{imagesource}}">
+    </div>
+    {{#if comment}}
+    <div class="displayedComments">"...{{comment}}..."</div>
+    {{/if}}
+</script>
+
+<div id="myModal" class="myModal centered" style="display: none">
+    <div class="exit-btn-modal">
+        <a id="closeModal"  type="submit"><span class="glyphicon glyphicon-remove right"></span></a>
+    </div>
+    <div id="modalContent"></div>
+</div>
+
+<div id="people-container"></div>
+</div>
+
+<script>
+    $(document).ready(function () {
+
+        var bgMusic = new Audio('./audio/background.mp3'),
+            peopleHover = new Audio('./audio/hover.mp3'),
+            peopleSelect = new Audio('./audio/personselected.mp3');
+
+        bgMusic.volume = 0.1;
+        bgMusic.loop = true;
+        bgMusic.play();
+
+
+        $(".element").mouseenter(function () {
+            peopleHover.currentTime = 0;
+            peopleHover.play();
+        });
+
+        $(".element").on("click", function (e) {
+            peopleSelect.play();
+
+            $("#modalContent").empty();
+
+            var data = {
+                fname: e.currentTarget.dataset.mistralFirstname,
+                lname: e.currentTarget.dataset.mistralLastname,
+                comment: e.currentTarget.dataset.mistralComment,
+                imagesource: e.currentTarget.dataset.mistralImage
+            };
+
+            if (data.comment) {
+                var msg = new SpeechSynthesisUtterance(data.comment);
+                msg.volume = 1;
+
+                speechSynthesis.speak(msg);
+            }
+
+            var source = $("#person-template").html();
+            var template = Handlebars.compile(source);
+
+            $("#modalContent").append(template(data));
+
+            $('#myModal').show();
+        });
+
+        $("#closeModal").on("click", function () {
+            $('#myModal').hide();
+        })
+    });
+</script>
+<script src="js/code.js"></script>
+</body>
+</html>
