@@ -52,7 +52,7 @@ var people = [
     "dev-DinoSe-", "Dino", "Selimbasic", 1, 8,
     "dev-Ervin-I wonder, was Frodo a programmer?", "Ervin", "Sikira", 2, 8,
     "ux-Vildana-", "Vildana", "Lojo", 3, 8,
-    "dev-Seid-", "Seid", "Solak", 4, 8,
+    "dev-Seid-I wish I am a client... once", "Seid", "Solak", 4, 8,
     "dev-Elvis-Peugeot is the best car", "Elvis", "Spirjan", 5, 8,
     "qa-Zinajda-", "Zinajda", "Sarac", 6, 8,
     "hr-Azra-You need to read my emails!", "Azra", "Saric", 1, 9,
@@ -61,7 +61,7 @@ var people = [
     "qa-AdnanZi-Last night I was so cold...", "Adnan", "Zildzic", 4, 9,
     "dev-SemirSa-I am hungry", "Semir", "Sabic", 5, 9,
     "pm-Muamer-", "Muamer", "Cengic", 6, 9,
-    "dev-IrhadBa-HIS VOICE HITS LIKE THUNDER!!!!", "Irhad", "Babic", 1, 10,
+    "dev-IrhadBa-Do I yell?", "Irhad", "Babic", 1, 10,
     "dev-FaikCa-", "Faik", "Catibusic", 2, 10
 ];
 
