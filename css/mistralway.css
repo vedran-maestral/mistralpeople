@@ -27,10 +27,16 @@ a {
     color: #ffffff;
 }
 
-img {
+.thumbimage {
     width: 136px;
     height: 137px;
     box-shadow: 0px 0px 12px rgba(0, 255, 255, 0.5);
+}
+
+.maxthumbsize {
+
+    max-height: 16%;
+    max-width: 16%;
 }
 
 #container {
@@ -150,24 +156,19 @@ button:active {
     background-color: #f5f5f5 !important;
 }
 
-.img-responsive {
-    margin: 0 auto;
-}
-
 .displayedDetails {
     color: #f5f5f5!important;
     margin-left: 5px!important;
-    font-size: 15px!important;
+    /*font-size: 15px!important;*/
 }
 
 .displayedComments {
     color: #f5f5f5!important;
     font-style: italic;
-    font-size: 25px!important;
+    font-size: 15px!important;
     margin-top: 18px;
     margin-left: 12px;
 }
-
 
 .btn {
     background: #18191a;
@@ -209,5 +210,4 @@ button:active {
     left: 0;
     width: 30%;
     height: 23px
-
 }

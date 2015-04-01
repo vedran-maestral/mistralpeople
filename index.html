@@ -53,11 +53,12 @@
             {{fname}}
             {{lname}}
         </div>
-        <img class="img-responsive" src="{{imagesource}}">
+        <img class="img-responsive maxthumbsize" src="{{imagesource}}">
+        {{#if comment}}
+        <div class="displayedComments">"...{{comment}}..."</div>
+        {{/if}}
     </div>
-    {{#if comment}}
-    <div class="displayedComments">"...{{comment}}..."</div>
-    {{/if}}
+
 </script>
 
 <div id="myModal" class="myModal centered" style="display: none">

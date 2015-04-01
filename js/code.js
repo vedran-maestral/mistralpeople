@@ -88,6 +88,8 @@ function init() {
 
         img.src = "img/" + people[ i + 0 ].split("-")[1] + ".jpg";
 
+        img.className = "thumbimage";
+
         var element = document.createElement('div');
         element.className = 'element';
         element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
