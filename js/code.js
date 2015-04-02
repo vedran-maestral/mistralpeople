@@ -31,7 +31,7 @@ var people = [
     "dev-Markus-I am babou Schwabou", "Markus", "Gaab", 4, 4,
     "ux-Ashraf-", "Ashraf", "Rahal", 5, 4,
     "sys-Edib-Server will be shutdown in 5 minutes...", "Edib", "Zilic", 6, 4,
-    "dev-Vera-I need to exercise more...", "Vera", "Grubor", 1, 5,
+    "dev-Vera-I am freezing...", "Vera", "Grubor", 1, 5,
     "oa-Haris-I have not checked all the prices yet.!", "Haris", "Hadzic", 2, 5,
     "dev-Salih-", "Salih", "Hajlakovic", 3, 5,
     "dev-Mehmed-", "Mehmed", "Jusic", 4, 5,
