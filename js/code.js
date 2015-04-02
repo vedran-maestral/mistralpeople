@@ -61,7 +61,7 @@ var people = [
     "qa-AdnanZi-Last night I was so cold...", "Adnan", "Zildzic", 4, 9,
     "dev-SemirSa-I am hungry", "Semir", "Sabic", 5, 9,
     "pm-Muamer-", "Muamer", "Cengic", 6, 9,
-    "dev-IrhadBa-Do I yell?", "Irhad", "Babic", 1, 10,
+    "dev-Irhad-Do I yell?", "Irhad", "Babic", 1, 10,
     "dev-FaikCa-", "Faik", "Catibusic", 2, 10
 ];
 
@@ -144,8 +144,6 @@ function init() {
 
         var object = new THREE.Object3D();
 
-
-
         object.position.x = 800 * Math.cos(theta) * Math.sin(phi);
         object.position.y = 800 * Math.sin(theta) * Math.sin(phi);
         object.position.z = 800 * Math.cos(phi);
@@ -178,7 +176,6 @@ function init() {
         object.lookAt(vector);
 
         targets.helix.push(object);
-
     }
 
     // grid settings
@@ -191,14 +188,12 @@ function init() {
         object.position.z = ( Math.floor(i / 25) ) * 1000 - 2000;
 
         targets.grid.push(object);
-
     }
 
     renderer = new THREE.CSS3DRenderer();
     renderer.setSize(window.innerWidth, window.innerHeight);
     renderer.domElement.style.position = 'absolute';
     document.getElementById('people-container').appendChild(renderer.domElement);
-
 
     controls = new THREE.TrackballControls(camera, renderer.domElement);
     controls.rotateSpeed = 0.5;
@@ -235,9 +230,7 @@ function init() {
     }, false);
 
     transform(targets.people, 2000);
-
     window.addEventListener('resize', onWindowResize, false);
-
 }
 
 function transform(targets, duration) {
@@ -264,11 +257,9 @@ function transform(targets, duration) {
         .to({}, duration * 2)
         .onUpdate(render)
         .start();
-
 }
 
 function onWindowResize() {
-
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
 
@@ -277,16 +268,11 @@ function onWindowResize() {
 }
 
 function animate() {
-
     requestAnimationFrame(animate);
-
     TWEEN.update();
-
     controls.update();
-
 }
 
 function render() {
-
     renderer.render(scene, camera);
 }
