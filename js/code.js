@@ -32,7 +32,7 @@ var people = [
     "ux-Ashraf-", "Ashraf", "Rahal", 5, 4,
     "sys-Edib-Server will be shutdown in 5 minutes...", "Edib", "Zilic", 6, 4,
     "dev-Vera-I am freezing...", "Vera", "Grubor", 1, 5,
-    "oa-Haris-I have not checked all the prices yet.!", "Haris", "Hadzic", 2, 5,
+    "oa-Haris-No Coffee until I check all the prices!", "Haris", "Hadzic", 2, 5,
     "dev-Salih-", "Salih", "Hajlakovic", 3, 5,
     "dev-Mehmed-", "Mehmed", "Jusic", 4, 5,
     "dev-Irfan-", "Irfan", "Kahvedzic", 5, 5,
@@ -59,8 +59,8 @@ var people = [
     "dev-Azmir-Based on my research, I made this document!", "Azmir", "Terzini", 2, 9,
     "qa-EmirZe-", "Emir", "Zelic", 3, 9,
     "qa-AdnanZi-Last night I was so cold...", "Adnan", "Zildzic", 4, 9,
-    "dev-SemirSa-I am hungry", "Semir", "Sabic", 5, 9,
-    "pm-Muamer-", "Muamer", "Cengic", 6, 9,
+    "dev-SemirSa-Mistral beauty contest winner", "Semir", "Sabic", 5, 9,
+    "pm-Muamer-High speed mosquito runway", "Muamer", "Cengic", 6, 9,
     "dev-Irhad-Do I yell?", "Irhad", "Babic", 1, 10,
     "dev-FaikCa-", "Faik", "Catibusic", 2, 10
 ];
