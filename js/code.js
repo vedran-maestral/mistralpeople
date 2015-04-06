@@ -43,7 +43,7 @@ var people = [
     "ux-TarikUx-I don't know. I am not sure. That looks ugly.", "Tarik", "Mehmedovic", 4, 6,
     "dev-TarikMe-I wish they change swimming pool water", "Tarik", "Mesetovic", 5, 6,
     "dev-AdnanMu-Company's main 'Configurator'", "Adnan", "Mulalic", 6, 6,
-    "dev-Nihad-", "Nihad", "Ogresevic", 1, 7,
+    "dev-Nihad-Dont't Yell...", "Nihad", "Ogresevic", 1, 7,
     "dev-Damir-We need to Cox that feature", "Damir", "Ramic", 2, 7,
     "qa-Daria-", "Daria", "Rojic", 3, 7,
     "dev-Milhad-I dream going to Nepal", "Milhad", "Salihi", 4, 7,
