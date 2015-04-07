@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <title>MISTRAL Folks</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="css/impress-demo.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/mistralway.css">
-
 </head>
 <body>
 <script src="js/jquery-2.1.1.js"></script>
@@ -46,22 +44,7 @@
 <script src="js/tween.min.js"></script>
 <script src="js/TrackballControls.js"></script>
 <script src="js/CSS3DRenderer.js"></script>
-
 <script src="js/handlebars-v3.0.0.js"></script>
-
-<script id="person-template" type="text/x-handlebars-template">
-    <div>
-        <div class="displayedDetails">
-            {{fname}}
-            {{lname}}
-        </div>
-        <img class="img-responsive maxthumbsize" src="{{imagesource}}">
-        {{#if comment}}
-        <div class="displayedComments">"...{{comment}}..."</div>
-        {{/if}}
-    </div>
-
-</script>
 
 <div id="myModal" class="myModal centered" style="display: none">
     <div class="exit-btn-modal">
@@ -71,8 +54,8 @@
 </div>
 <div id="instructions" class="instruction-panel">
 <ul class="list-unstyled">
-    <li> Hold down right mouse button + move mouse to navigate the Scene</li>
-    <li> Hold down left mouse button + move mouse to pan around the Scene</li>
+    <li> Right mouse button + move mouse to "drag" the People</li>
+    <li> Left mouse button + move mouse to pan around the Scene</li>
     <li> Mouse wheel to zoom around the Scene</li>
 </ul>
 
@@ -116,10 +99,10 @@
                 speechSynthesis.speak(msg);
             }
 
-            var source = $("#person-template").html();
-            var template = Handlebars.compile(source);
-
-            $("#modalContent").append(template(data));
+            $.get('templates/person-details.html', function (templateData) {
+                var template = Handlebars.compile(templateData);
+                $("#modalContent").append(template(data));
+            }, 'html');
 
             $('#myModal').show();
         });

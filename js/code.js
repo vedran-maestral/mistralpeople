@@ -43,7 +43,7 @@ var people = [
     "ux-TarikUx-I don't know. I am not sure. That looks ugly.", "Tarik", "Mehmedovic", 4, 6,
     "dev-TarikMe-I wish they change swimming pool water", "Tarik", "Mesetovic", 5, 6,
     "dev-AdnanMu-Company's main 'Configurator'", "Adnan", "Mulalic", 6, 6,
-    "dev-Nihad-Dont't Yell...", "Nihad", "Ogresevic", 1, 7,
+    "dev-Nihad-Thumb Warrior!", "Nihad", "Ogresevic", 1, 7,
     "dev-Damir-We need to Cox that feature", "Damir", "Ramic", 2, 7,
     "qa-Daria-", "Daria", "Rojic", 3, 7,
     "dev-Milhad-I dream going to Nepal", "Milhad", "Salihi", 4, 7,
@@ -62,7 +62,7 @@ var people = [
     "dev-SemirSa-Mistral beauty contest winner", "Semir", "Sabic", 5, 9,
     "pm-Muamer-High speed mosquito runway", "Muamer", "Cengic", 6, 9,
     "dev-Irhad-Do I yell?", "Irhad", "Babic", 1, 10,
-    "dev-FaikCa-", "Faik", "Catibusic", 2, 10
+    "dev-FaikCa-Wow, Do I look cool or what?", "Faik", "Catibusic", 2, 10
 ];
 
 var camera, scene, renderer;
