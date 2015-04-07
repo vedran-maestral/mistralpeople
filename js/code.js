@@ -4,7 +4,7 @@
  */
 
 //Get this from some server. Hard coded for the time being
-// Detailed explanation of the data structure is in readme file
+//Detailed explanation of the data structure is in readme file
 
 var people = [
     "dev-Vedran-He will twist your words beyond recognition", "Vedran", "Maricevic", 1, 1,
@@ -19,7 +19,7 @@ var people = [
     "ux-Ena-", "Ena", "Cubric", 4, 2,
     "dev-Anita-", "Anita", "Mahmic", 5, 2,
     "dev-Matej-My shoulder is stronger then floor", "Matej", "Cica", 6, 2,
-    "dev-EmirSa-", "Emir", "Sator", 1, 3,
+    "dev-EmirSa-It's done when it's done!", "Emir", "Sator", 1, 3,
     "cto-Sulejman-I owe you lunch!", "Sulejman", "Catibusic", 2, 3,
     "dev-Nerman-I am best at Trivia Crack", "Nerman", "Deliahmetovic", 3, 3,
     "ux-Benjamin-", "Benjamin", "Delic", 4, 3,
@@ -131,10 +131,10 @@ function init() {
         object.position.y = -( people[ i + 4 ] * 215 ) + 990;
 
         targets.people.push(object);
+
     }
 
     // sphere
-
     var vector = new THREE.Vector3();
 
     for (var i = 0, l = objects.length; i < l; i++) {
@@ -156,7 +156,6 @@ function init() {
     }
 
     // helix
-
     var vector = new THREE.Vector3();
 
     for (var i = 0, l = objects.length; i < l; i++) {
@@ -202,6 +201,7 @@ function init() {
     controls.addEventListener('change', render);
 
     var button = document.getElementById('people');
+
     button.addEventListener('click', function (event) {
 
         transform(targets.people, 2000);
@@ -229,7 +229,7 @@ function init() {
 
     }, false);
 
-    transform(targets.people, 2000);
+    transform(targets.helix, 3000);
     window.addEventListener('resize', onWindowResize, false);
 }
 
