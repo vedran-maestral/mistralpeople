@@ -58,7 +58,7 @@ var people = [
     "hr-Azra-You need to read my emails!", "Azra", "Saric", 1, 9,
     "dev-Azmir-Based on my research, I made this document!", "Azmir", "Terzini", 2, 9,
     "qa-EmirZe-", "Emir", "Zelic", 3, 9,
-    "qa-AdnanZi-Last night I was so cold...", "Adnan", "Zildzic", 4, 9,
+    "qa-AdnanZi-oy yesam yeae seenioch ozebo'u.", "Adnan", "Zildzic", 4, 9,
     "dev-SemirSa-Mistral beauty contest winner", "Semir", "Sabic", 5, 9,
     "pm-Muamer-High speed mosquito runway", "Muamer", "Cengic", 6, 9,
     "dev-Irhad-Do I yell?", "Irhad", "Babic", 1, 10,
