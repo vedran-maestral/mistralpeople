@@ -34,7 +34,7 @@ var people = [
     "dev-Vera-I am freezing...", "Vera", "Grubor", 1, 5,
     "oa-Haris-No Coffee until I check all the prices!", "Haris", "Hadzic", 2, 5,
     "dev-Salih-", "Salih", "Hajlakovic", 3, 5,
-    "dev-Mehmed-", "Mehmed", "Jusic", 4, 5,
+    "dev-Mehmed-Carb Loader", "Mehmed", "Jusic", 4, 5,
     "dev-Irfan-", "Irfan", "Kahvedzic", 5, 5,
     "dev-Emir-Resident Midget", "Emir", "Kljucanin", 6, 5,
     "eng-Camila-and how is your English today?", "Camila", "Kubura", 1, 6,
